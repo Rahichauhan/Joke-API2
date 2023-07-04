@@ -1,0 +1,79 @@
+
+
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="split left">
+      <div class="centered">
+        <div class="jokes">
+          <div class="logo"></div>
+          <h1>Joke Manager</h1>
+          <div class="button">
+            <button id="generateJokesBtn">Generate Jokes</button>
+            <button id="Addjokes">Add jokes</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+   
+
+    <script>
+
+      const generateJokesBtn = document.getElementById('generateJokesBtn');
+      generateJokesBtn.addEventListener('click', getJokes);
+
+      function getJokes() {
+        try {
+          window.location.href = '/jokes';
+        } catch (error) {
+          console.log(error.message);
+        }
+      }
+
+      const Addjokes = document.getElementById('Addjokes');
+      Addjokes.addEventListener('click', loadAddPage);
+
+      function loadAddPage() {
+        try {
+          window.location.href = '/addjokes';
+        } catch (error) {
+          console.log(error.message);
+        }
+      }
+
+
+
+
+    </script>
+
+
+  </body>
+
+  </html>

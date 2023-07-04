@@ -1,0 +1,173 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+ 
+  .centered {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+  .jokes {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    width: 200px;
+    height: 200px;
+    background-image: url('jokes1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 42px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+
+   button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.2s;
+  } 
+
+
+ 
+
+
+  button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Style the "Generate Jokes" button differently */
+  #generateJokesBtn {
+    background-color: #28a745;
+  }
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+   
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    font-size: 24px;
+    color: #555;
+  }
+  
+  h1:nth-child(3) {
+    font-size: 48px;
+    margin-top: 50px;
+  }
+  
+  h1:nth-child(4) {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  
+  h1:nth-child(4)::before {
+    content: "\1F603"; /* Unicode for the smiling emoji */
+    font-size: 32px;
+    margin-right: 10px;
+  }
+  /* Add some responsive styling for smaller screens */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 32px;
+    }
+
+    button {
+      font-size: 16px;
+    }
+
+    .jokes {
+      padding: 20px;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+    }
+    input[type="text"] {
+        width: 250px;
+      }
+    
+      input[type="submit"] {
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    
+      h1:nth-child(3) {
+        font-size: 36px;
+      }
+    
+      h1:nth-child(4) {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+    
+      h1:nth-child(4)::before {
+        font-size: 28px;
+      }
+  }
